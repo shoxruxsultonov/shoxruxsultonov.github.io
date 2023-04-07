@@ -3,62 +3,118 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>mikrafon </title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Atribut celestorlar bilan ishlash</title>
 	<style>
 		* {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-		.mic {
-			padding: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			color: #fff;
-		}
-		.far {
-			padding: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			background-color: #fff;
-			font-size: 4em;
-		}
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: arial;
+}
 
-		&::before,
-		&::after {
-			content: "";
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			border-radius: 100%;
-			z-index: 2;
-			box-shadow: 0 0 20px 20px #1c884f;
-		}
+.container {
+	width: 100%;
+	height: 100vh;
+	background:url( https://images.pexels.com/photos/1213447/pexels-photo-1213447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 ) no-repeat center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: animateBG 5s linear infinite;
+}
 
-		&::before {
-			width: 400px;
-			height: 400px;
-			background-color: #1a084e;
-		}
+@keyframes animateBG {
+	100% {
+		filter: hue-rotate(360deg);
+	}
+} 
 
-		&::after {
-			width: 250px;
-			height: 250px;
-			background-color: #2f1e5f;
-			animation: circle-size 0.8s lineral infinite alternate;
-		}
+form {
+	width: 300px;
+	height: 350px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	padding: 10px;
+	backdrop-filter: blur(15px);
+}
+
+h2.title {
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	margin: 10px auto;
+}
+
+input {
+	width: 100%;
+	padding: 10px 15px;
+	border: 2px solid #eee;
+	margin: 15px auto;
+	outline: none;
+	transition: all 0.3s;
+	background-color: transparent;
+	color: white;
+}
+
+input::placeholder {
+	color: white;
+	text-transform: uppercase;
+}
+
+input:focus {
+	border-radius: 100px;
+	border-color: yellow;
+}
+input[type="submit"] {
+	width: 200px;
+	display: block;
+	margin: 15px auto;
+	border: none;
+	background-color: rgba(0, 0, 255, 0.5);
+	border-radius: 100px;
+	cursor: pointer;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+}
+input[type="submit"]:hover {
+	background-color: dodgerblue;
+	box-shadow: 0 0 5px rgba(0, 0, 255, 0.4);
+}
+button {
+	position: absolute;
+	bottom: 70px;
+	padding: 10px;
+	width: 220px;
+	height: 40px;
+	background-color: transparent;
+	color: white;
+	border-radius: 50px;
+	backdrop-filter: blur(20px);
+	border: 2px solid red;
+}
+button:hover {
+	transform: scale(1.1);
+}
+span {
+	text-transform: uppercase;
+	color: green;
+}
 	</style>
 </head>
 <body>
 
-	<div class="mic">
-		<i class="far fa-microphone"></i>
-		<div class="mic-shodow"></div>
+	<div class="container">
+		<form>
+			<h2 class="title"> Login form</h2>
+			<input type="text" placeholder="usernam">
+			<input type="password" placeholder="password">
+			<input type="submit" name=" login">
+		</form>
+		<button type="button" onclick="location.href='https://t.me/shoxruxbek6424'" target="_blank"> Power by <span>shoxruxbek</span></button>
 	</div>
+
+
 
 </body>
 </html>
