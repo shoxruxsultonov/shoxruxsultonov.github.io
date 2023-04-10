@@ -1,7 +1,7 @@
 * {
 	margin: 0;
-	padding: 0;
 	box-sizing: border-box;
+	padding: 0;
 }
 
 body {
@@ -9,10 +9,10 @@ body {
 }
 
 div.quti {
+	counter-reset: all_box;
 	width: 100%;
 	padding: 10px;
 	border: 1px solid #000;
-	counter-reset: all_box;
 }
 
 div.qutichalar {
@@ -50,7 +50,7 @@ div.qutichalar:nth-child(1)::before {
 }
 
 div.qutichalar:nth-child(1):hover::before {
-/*	margin-top: -40px;*/
+	margin-top: -40px;
 	top: 40px;
 	left: 45px;
 }
