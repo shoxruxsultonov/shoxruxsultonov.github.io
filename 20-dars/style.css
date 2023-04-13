@@ -1,0 +1,76 @@
+* {
+	padding: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 5px;
+}
+
+.box {
+	width: calc(100% - 10px * 2);
+	height: auto;
+	padding: 15px;
+	border: 1px solid #000;
+	margin: 10px;
+} 
+
+.ikki {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #000;
+	transition: all 0.3s;
+}
+.ikki:hover {
+	transform: scale(1.3) rotate(180deg);
+}
+
+/*
+	margin: scaleX(), skew(), scaleY(), translateX(), translateY()
+*/
+	
+
+/*
+	tranform: ;
+	2D bilan ishlaydigan qiymatlar
+	10deg
+	scaleX();
+	scaleY():
+	scale():
+	
+	100px;
+	translateX();
+	translateY();
+	translate();
+	
+	10deg
+	scaleX();
+	scaleY();
+	scale();
+
+	matrix();
+	rotate();
+
+	3D ish;ishlaydigan qiymatlar
+	rotateX();
+	rotateY();
+	scaleZ();
+	scale();
+
+	transition: qiymar vaqt;
+	transition: width 1s;
+*/
+
+.uch {
+	width: 100px;
+	height: 100px;
+	background-color: red ;
+	border: 1px solid #000;
+	transition: background-color,  transform 1.5s;
+}
+.box:hover .uch {
+	transform: translate(1200px, -140px) rotateZ(1440deg);
+	background-color: yellow;
+	
+}
