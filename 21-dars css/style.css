@@ -1,0 +1,73 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 10px;
+}
+
+div.box {
+	width: 100%;
+	height: calc(100vh - 10px *2);
+	outline: 1px solid #000;
+}
+
+.animatsiya {
+	width: 50px;
+	height: 50px;
+	background-color: yellow;
+	position: relative;
+	animation-name: animation_nome;
+	animation-duration:4s;
+	animation-iteration-count:5s;
+	animation-delay: 1s;
+	animation-direction: normal;
+	animation-timing-function: normal;
+	animation-fill-mode: both;
+/*	animation: animation_nome 3s linear in;*/
+}
+
+@keyframes animation_nome {
+	0% {
+		top: 0;
+		left: 0;
+		filter: hue-rotate(0deg);
+	}
+	25% {
+		top: calc(100% - 50px);
+		left: calc(100% - 50px);
+	}
+	50% {
+		left: calc(100% - 50px);
+		top:0;
+	}
+	75% {
+		left: 0;
+		top: calc(100% - 50px);
+	}
+
+	100% {
+		left: 0;
+		top:calc(100% - 100%);
+		filter: hue-rotate(3600deg);
+	}
+}
+
+/*
+		animatsiya uchun ishlatiladigan qiymatlar
+		@keyframes animatsiya_nomi {
+			animatsiyaga uslub berish qiymati
+		}
+
+		selector {
+			animation-nome: animatsiya niome ;
+			animation-duration: animatsiya vaqti;
+			animation-itertion-count: animatsiya necha marta takrorlanshin
+			animation-delay : animatsiya boshlanishini kutish
+			animation-dristion: animatsiya yo'nalishini o'zgartirish;
+			animation-timing-funistion: animatsiya tezligi;
+			animation-fill-mode animatsiya
+		}
+*/
