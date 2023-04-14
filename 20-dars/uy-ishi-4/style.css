@@ -11,7 +11,6 @@ body {
 	align-items: center;
 	height: 100vh;
 }
-
 div {
 	text-align: center;
 	padding: 14px 9px;
@@ -21,17 +20,14 @@ div {
 	margin: 10px;
 	border-radius: 100%;
 }
-
 div .fa-vk {
 	margin-top: 3px;
 	margin-left: -5px;
 }
-
 div .fa-instagram {
 	margin-top: -1.5px;
 	margin-left: 1.5px;
 }
-
 .fab {
 	text-align: center;
 	font-size: 2.3em;
@@ -43,11 +39,9 @@ div .fa-instagram {
 	width: 1em;
 	height: 1em;
 }
-
 .fa-facebook-f {
 	border: none;
 }
-
 .fa-google {
 	color: white;
 	border: none;
@@ -62,7 +56,6 @@ div .fa-instagram {
 	background-color: transparent;
 	text-align: center;
 }
-
 .fa-twitter {
 	width: 1.4em;
 	height: 1.1em;
@@ -72,21 +65,17 @@ div .fa-instagram {
 	background-color: transparent;
 	text-align: center;
 }
-
 .fa-vk {
 	border: none;
 	color: white;
 	background-color: transparent;
 	text-align: center;
 }
-
-
 .fa-telegram {
 	border: none;
 	text-align: center;
 	border: none;
 }
-
 div:hover {
 	box-shadow: 0 0 10px blue;
 	border-color: blue;
