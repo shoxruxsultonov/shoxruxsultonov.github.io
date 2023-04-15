@@ -27,7 +27,6 @@ div.box {
 	animation-direction: normal;
 	animation-timing-function: linear;
 	animation-fill-mode: both;
-/*	animation: animation_nome 3s linear in;*/
 }
 
 @keyframes animation_nome {
